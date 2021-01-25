@@ -1,0 +1,14 @@
+{
+  "name": "b13/evergreen-errors",
+  "description": "Custom Error Handling for TYPO3",
+  "license": "GPL-2.0+",
+  "autoload": {
+    "psr-4": {
+      "B13\\EvergreenErrors\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "typo3/cms-core": "^9.5 || ^10.0 || ^11.0"
+  }
+}
