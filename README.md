@@ -27,6 +27,12 @@ Here is an example for your AdditionalConfiguration.php file:
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['productionExceptionHandler'] = \B13\EvergreenErrors\EvergreenExceptionHandler::class;
 ```
 
+If you also want to enable this for your debug exception handler, use
+
+```
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['debugExceptionHandler'] = \B13\EvergreenErrors\EvergreenDebugExceptionHandler::class;
+```
+
 ## License
 
 The package is licensed under GPL v2+, same as the TYPO3 Core. For details see the LICENSE file in this repository.
