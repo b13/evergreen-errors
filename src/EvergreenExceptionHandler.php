@@ -12,7 +12,6 @@ namespace B13\EvergreenErrors;
  */
 
 use TYPO3\CMS\Core\Error\ProductionExceptionHandler;
-use TYPO3\CMS\Core\Utility\HttpUtility;
 
 class EvergreenExceptionHandler extends ProductionExceptionHandler
 {
@@ -24,7 +23,7 @@ class EvergreenExceptionHandler extends ProductionExceptionHandler
     protected function sendStatusHeaders(\Throwable $exception)
     {
         if (!headers_sent()) {
-            header(HttpUtility::HTTP_STATUS_400);
+            header('HTTP/1.1 400 Bad Request');
         }
     }
 }

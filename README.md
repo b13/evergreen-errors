@@ -21,7 +21,7 @@ Then configure your TYPO3 installation to use the exception handler, by setting 
 `productionExceptionHandler` in your `typo3conf/LocalConfiguration.php` or `typo3conf/AdditionalConfiguration.php`
 file.
 
-Here is an example for your AdditionalConfiguration.php file:
+Here is an example for your AdditionalConfiguration.php / additional.php file:
 
 ```
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['productionExceptionHandler'] = \B13\EvergreenErrors\EvergreenExceptionHandler::class;
